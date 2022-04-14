@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Flink 分层API</title>
+      <link href="/Flink-%E5%88%86%E5%B1%82API/"/>
+      <url>/Flink-%E5%88%86%E5%B1%82API/</url>
+      
+        <content type="html"><![CDATA[<p>最底层级的抽象仅仅提供了有状态流，它将处理函数（Process Function）嵌入到了<br>DataStream API 中。底层处理函数（Process Function）与 DataStream API 相集成，可以对某<br>些操作进行抽象，它允许用户可以使用自定义状态处理来自一个或多个数据流的事件，且状态<br>具有一致性和容错保证。除此之外，用户可以注册事件时间并处理时间回调，从而使程序可以<br>处理复杂的计算。</p><span id="more"></span><p>实际上，大多数应用并不需要上述的底层抽象，而是直接针对核心 API（Core APIs） 进<br>行编程，比如 DataStream API（用于处理有界或无界流数据）以及 DataSet API（用于处理有界<br>数据集）。这些 API 为数据处理提供了通用的构建模块，比如由用户定义的多种形式的转换<br>（transformations）、连接（joins）、聚合（aggregations）、窗口（windows）操作等。DataSet API<br>13<br>为有界数据集提供了额外的支持，例如循环与迭代。这些 API 处理的数据类型以类（classes）<br>的形式由各自的编程语言所表示。</p><p>Table API 是以表为中心的声明式编程，其中表在表达流数据时会动态变化。Table API 遵<br>循关系模型：表有二维数据结构（schema）（类似于关系数据库中的表），同时 API 提供可比<br>较的操作，例如 select、join、group-by、aggregate 等。</p><p>尽管 Table API 可以通过多种类型的用户自定义函数（UDF）进行扩展，仍不如核心 API<br>更具表达能力，但是使用起来代码量更少，更加简洁。除此之外，Table API 程序在执行之前<br>会使用内置优化器进行优化。</p><p>我们可以在表与 DataStream&#x2F;DataSet 之间无缝切换，以允许程序将 Table API 与<br>DataStream 以及 DataSet 混合使用。</p><p>Flink 提供的最高层级的抽象是 SQL。这一层抽象在语法与表达能力上与 Table API 类似，<br>但是是以 SQL 查询表达式的形式表现程序。SQL 抽象与 Table API 交互密切，同时 SQL 查询<br>可以直接在 Table API 定义的表上执行。</p><p>目前 Flink SQL 和 Table API 还在开发完善的过程中，很多大厂都会二次开发符合自己需<br>要的工具包。而 DataSet 作为批处理 API 实际应用较少，2020 年 12 月 8 日发布的新版本 1.12.0,<br>已经完全实现了真正的流批一体，DataSet API 已处于软性弃用（soft deprecated）的状态。用<br>Data Stream API 写好的一套代码, 即可以处理流数据, 也可以处理批数据，只需要设置不同的<br>执行模式。这与之前版本处理有界流的方式是不一样的，Flink 已专门对批处理数据做了优化<br>处理。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Flink </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>HBase RowKey设计</title>
+      <link href="/HBase-RowKey%E8%AE%BE%E8%AE%A1/"/>
+      <url>/HBase-RowKey%E8%AE%BE%E8%AE%A1/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> HBase </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>MongoDB分片集群</title>
+      <link href="/MongoDB%E5%88%86%E7%89%87%E9%9B%86%E7%BE%A4/"/>
+      <url>/MongoDB%E5%88%86%E7%89%87%E9%9B%86%E7%BE%A4/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> MongoDB </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>MongoDB副本集</title>
+      <link href="/MongoDB%E5%89%AF%E6%9C%AC%E9%9B%86/"/>
+      <url>/MongoDB%E5%89%AF%E6%9C%AC%E9%9B%86/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> MongoDB </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>MongoDB索引</title>
+      <link href="/MongoDB%E7%B4%A2%E5%BC%95/"/>
+      <url>/MongoDB%E7%B4%A2%E5%BC%95/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> MongoDB </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>MongoDB事务</title>
+      <link href="/MongoDB%E4%BA%8B%E5%8A%A1/"/>
+      <url>/MongoDB%E4%BA%8B%E5%8A%A1/</url>
+      
+        <content type="html"><![CDATA[<p>写事务：writeConcern<br>读事务：readPreference、readConcern<br>多文档事务</p><span id="more"></span><p>具体可参考图灵学院教程，目前找到的唯一有讲MongoDB事务的视频</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> MongoDB </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
