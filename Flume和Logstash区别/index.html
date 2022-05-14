@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="大数据," />
 
 
 
@@ -79,14 +79,17 @@
 
 
 
-<meta name="description" content="zyp&#39;s blog">
-<meta property="og:type" content="website">
-<meta property="og:title" content="zyp&#39;s blog">
-<meta property="og:url" content="http://example.com/archives/2022/index.html">
+<meta name="description" content="三者都是比较主流的数据采集工具(主要用于日志采集)，有什么区别？具体场景使用合适的采集工具,可以大大提高效率和可靠性,并降低资源成本。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Flume、Logstash、Filebeat对比">
+<meta property="og:url" content="http://example.com/Flume%E5%92%8CLogstash%E5%8C%BA%E5%88%AB/index.html">
 <meta property="og:site_name" content="zyp&#39;s blog">
-<meta property="og:description" content="zyp&#39;s blog">
+<meta property="og:description" content="三者都是比较主流的数据采集工具(主要用于日志采集)，有什么区别？具体场景使用合适的采集工具,可以大大提高效率和可靠性,并降低资源成本。">
 <meta property="og:locale">
+<meta property="article:published_time" content="2022-05-14T06:17:00.000Z">
+<meta property="article:modified_time" content="2022-05-14T07:33:55.813Z">
 <meta property="article:author" content="ZYP">
+<meta property="article:tag" content="大数据">
 <meta name="twitter:card" content="summary">
 
 
@@ -117,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://example.com/archives/2022/"/>
+  <link rel="canonical" href="http://example.com/Flume和Logstash区别/"/>
 
 
 
 
 
-  <title>归档 | zyp's blog</title>
+  <title>Flume、Logstash、Filebeat对比 | zyp's blog</title>
   
 
 
@@ -142,7 +145,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -252,240 +255,133 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-      <span class="archive-page-counter">
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://example.com/Flume%E5%92%8CLogstash%E5%8C%BA%E5%88%AB/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="zyp's blog">
+    </span>
+
+    
+      <header class="post-header">
+
         
         
+          <h1 class="post-title" itemprop="name headline">Flume、Logstash、Filebeat对比</h1>
         
+
+        <div class="post-meta">
           
-        
-        嗯..! 目前共计 7 篇日志。 继续努力。
-      </span>
 
-      
-
-        
-        
-        
-
-        
           
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2022">2022</h1>
-          </div>
-        
-        
+            
+          
 
-        
+          
+          
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+          
 
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/Flume%E5%92%8CLogstash%E5%8C%BA%E5%88%AB/" itemprop="url">
-              
-                <span itemprop="name">Flume、Logstash、Filebeat对比</span>
-              
-            </a>
-        
-      </h2>
+          
 
-    </header>
-  </article>
+          
 
+        </div>
+      </header>
+    
 
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/Flink-%E5%88%86%E5%B1%82API/" itemprop="url">
-              
-                <span itemprop="name">Flink 分层API</span>
-              
-            </a>
-        
-      </h2>
-
-    </header>
-  </article>
-
-
-
       
 
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/HBase-RowKey%E8%AE%BE%E8%AE%A1/" itemprop="url">
-              
-                <span itemprop="name">HBase RowKey设计</span>
-              
-            </a>
-        
-      </h2>
-
-    </header>
-  </article>
-
-
+      
+        <p>三者都是比较主流的数据采集工具(主要用于日志采集)，有什么区别？具体场景使用合适的采集工具,可以大大提高效率和可靠性,并降低资源成本。</p>
+<span id="more"></span>
+<p>Flume更注重于数据的传输，对于数据的预处理不如Logstash。在传输上Flume比Logstash更可靠一些，因为数据会持久化在channel中。数据只有存储在sink端中，才会从channel中删除，这个过程是通过事物来控制的，保证了数据的可靠性。</p>
+<p>Logstash是ELK组件中的一个，一般都是同ELK其它组件一起使用，更注重于数据的预处理，Logstash有比Flume丰富的插件可选，所以在扩展功能上比Flume全面。但Logstash内部没有persist queue，所以在异常情况下会出现数据丢失的问题。</p>
+<p>Filebeat是一个轻量型日志采集工具，因为Filebeat是Elastic Stack的一部分，因此能够于ELK组件无缝协作。Filebeat占用的内存要比Logstash小很多。性能比较稳健，很少出现宕机。</p>
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/MongoDB%E5%88%86%E7%89%87%E9%9B%86%E7%BE%A4/" itemprop="url">
-              
-                <span itemprop="name">MongoDB分片集群</span>
-              
-            </a>
-        
-      </h2>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/MongoDB%E5%89%AF%E6%9C%AC%E9%9B%86/" itemprop="url">
-              
-                <span itemprop="name">MongoDB副本集</span>
-              
-            </a>
-        
-      </h2>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/MongoDB%E7%B4%A2%E5%BC%95/" itemprop="url">
-              
-                <span itemprop="name">MongoDB索引</span>
-              
-            </a>
-        
-      </h2>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/MongoDB%E4%BA%8B%E5%8A%A1/" itemprop="url">
-              
-                <span itemprop="name">MongoDB事务</span>
-              
-            </a>
-        
-      </h2>
-
-    </header>
-  </article>
-
-
-
-      
-
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/" rel="tag"># 大数据</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/Flink-%E5%88%86%E5%B1%82API/" rel="next" title="Flink 分层API">
+                <i class="fa fa-chevron-left"></i> Flink 分层API
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -493,6 +389,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -664,6 +564,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 

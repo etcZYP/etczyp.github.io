@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>Flume、Logstash、Filebeat对比</title>
+      <link href="/Flume%E5%92%8CLogstash%E5%8C%BA%E5%88%AB/"/>
+      <url>/Flume%E5%92%8CLogstash%E5%8C%BA%E5%88%AB/</url>
+      
+        <content type="html"><![CDATA[<p>三者都是比较主流的数据采集工具(主要用于日志采集)，有什么区别？具体场景使用合适的采集工具,可以大大提高效率和可靠性,并降低资源成本。</p><span id="more"></span><p>Flume更注重于数据的传输，对于数据的预处理不如Logstash。在传输上Flume比Logstash更可靠一些，因为数据会持久化在channel中。数据只有存储在sink端中，才会从channel中删除，这个过程是通过事物来控制的，保证了数据的可靠性。</p><p>Logstash是ELK组件中的一个，一般都是同ELK其它组件一起使用，更注重于数据的预处理，Logstash有比Flume丰富的插件可选，所以在扩展功能上比Flume全面。但Logstash内部没有persist queue，所以在异常情况下会出现数据丢失的问题。</p><p>Filebeat是一个轻量型日志采集工具，因为Filebeat是Elastic Stack的一部分，因此能够于ELK组件无缝协作。Filebeat占用的内存要比Logstash小很多。性能比较稳健，很少出现宕机。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 大数据 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Flink 分层API</title>
       <link href="/Flink-%E5%88%86%E5%B1%82API/"/>
       <url>/Flink-%E5%88%86%E5%B1%82API/</url>
@@ -103,7 +122,7 @@
       <link href="/MongoDB%E4%BA%8B%E5%8A%A1/"/>
       <url>/MongoDB%E4%BA%8B%E5%8A%A1/</url>
       
-        <content type="html"><![CDATA[<p>写事务：writeConcern<br>读事务：readPreference、readConcern<br>多文档事务</p><span id="more"></span><p>具体可参考图灵学院教程，目前找到的唯一有讲MongoDB事务的视频</p>]]></content>
+        <content type="html"><![CDATA[<p>写事务：writeConcern<br>读事务：readPreference、readConcern<br>多文档事务</p><span id="more"></span><p>具体可参考 <a href="https://www.bilibili.com/video/BV13a4y1J7L6?p=19">https://www.bilibili.com/video/BV13a4y1J7L6?p=19</a></p>]]></content>
       
       
       
